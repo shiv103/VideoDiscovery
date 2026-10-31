@@ -244,7 +244,7 @@ function App() {
                 {filteredVideos.map((video, idx) => (
                   <div key={idx} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow group">
                     {/* Fixed aspect-[9/16] class here */}
-                    <div className="relative aspect-[9/16] bg-gray-100">
+                    <div className="relative aspect-9/16 bg-gray-100">
                       <img src={video.thumbnail_url} alt="thumbnail" className="w-full h-full object-cover" />
                       <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
                         <PlayCircle className="text-white w-12 h-12" />
